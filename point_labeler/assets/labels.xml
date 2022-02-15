@@ -1,0 +1,87 @@
+    <!-- 	  | id | class name | color (R, G, B) |   -->
+    <!-- Class: [0: Unlabeled (255, 255, 255)], [1: PTW (0, 0, 70)], [2: Pedestrian (220, 20, 60)], 
+	[3: CommVehicle (0, 0, 230)], [4: Vehicle (0, 0, 142)], [5: Bicycle (119, 11, 32)] -->
+<config>
+	<!-- unlabeled -->
+	<label>
+		<id>0</id>
+		<name>unlabeled</name>
+		<description>all points which is static, background, etc..</description>
+		<color>0 0 0</color>
+		<root>void</root>
+		<macro></macro>
+		<category>unlabeled</category>
+	</label>
+
+	<!-- PTW -->
+	  <label>
+		<id>1</id>
+		<name>motorcycle</name>
+		<description>Powered Two Wheeler, This includes motorcycles, mopeds and its the driver or other passengers. Electric kickboard is included too. </description>
+    	<color>0 255 0</color>
+    	<!-- <color>0 0 70</color> -->
+		<root>vehicle</root>
+		<macro>vehicle</macro>
+		<category>PTW</category>
+		<moving>253</moving>
+		<instanceable>true</instanceable>
+	</label>
+
+	<!-- Pedestrian -->
+	<label>
+		<id>2</id>
+		<name>Pedestrian</name>
+		<description>Persons moving by their own legs, sitting, or any unusual pose, but not meant to drive a vehicle.</description>
+		<color>0 0 255</color>
+		<!-- <color>220 20 60</color> -->
+		<root>human</root>
+		<macro></macro>
+		<category>person</category>
+		<moving>254</moving>
+		<instanceable>true</instanceable>
+	</label>
+
+	<!-- CommVeh -->
+	<label>
+		<id>3</id>
+		<name>CommVeh</name>
+		<description>This includes trucks, vans, buses which used for commercial usuage.</description>
+		<color>255 255 0</color>
+		<!-- <color>0 0 230</color> -->
+		<root>vehicle</root>
+		<macro>vehicle</macro>
+		<category>CommVeh</category>
+		<moving>255</moving>
+		<instanceable>true</instanceable>
+	</label>
+
+	<!-- Vehicle -->
+	  <label>
+		<id>4</id>
+		<name>Vehicle</name>
+		<description>This includes cars, jeeps, SUVs, vans which used for non-commercial usuage.</description>
+		<color>255 0 0</color>
+		<!-- <color>0 0 142</color> -->
+		<root>vehicle</root>
+		<macro>vehicle</macro>
+		<category>car</category>
+		<moving>256</moving>
+		<instanceable>true</instanceable>
+	</label>
+
+	<!-- Bicycle -->
+  	<label>
+		<id>5</id>
+		<name>Bicycle</name>
+		<description>Includes bicycles and its passengers.</description>
+		<color>0 255 255</color>
+		<!-- <color>119 11 32</color> -->
+		<root>vehicle</root>
+		<macro>vehicle</macro>
+		<category>Bicycle</category>
+		<moving>257</moving>
+		<instanceable>true</instanceable>
+	</label>
+
+</config>
+
