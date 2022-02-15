@@ -444,7 +444,7 @@ Mainframe::Mainframe() : mChangesSinceLastSave(false) {
   initializeIcons();
 
   wImgWidget_ = new ImageViewer(nullptr, Qt::Window | Qt::WindowStaysOnTopHint);
-  wImgWidget_->resize(1241, 376);
+  wImgWidget_->resize(843, 647);
   ui.mViewportXYZ->update();
 
   lblNumPoints_.setText("0 ");
