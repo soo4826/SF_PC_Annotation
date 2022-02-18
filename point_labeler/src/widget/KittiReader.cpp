@@ -62,7 +62,7 @@ void KittiReader::initialize(const QString& directory) {
   std::string missing_img = QDir::currentPath().toStdString() + "/../assets/missing.png";
   QDir image_dir(base_dir_.filePath("image_2"));
   for (uint32_t i = 0; i < velodyne_filenames_.size(); ++i) {
-    QString filename = QFileInfo(QString::fromStdString(velodyne_filenames_[i])).baseName() + ".jpg";
+    QString filename = QFileInfo(QString::fromStdString(velodyne_filenames_[i])).baseName() + ".png";
     if (image_dir.exists(filename)) {
       image_filenames_.push_back(image_dir.filePath(filename).toStdString());
     } else {
