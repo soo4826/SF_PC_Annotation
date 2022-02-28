@@ -16,7 +16,7 @@
 	<!-- PTW -->
 	  <label>
 		<id>1</id>
-		<name>motorcycle</name>
+		<name>PTW</name>
 		<description>Powered Two Wheeler, This includes motorcycles, mopeds and its the driver or other passengers. Electric kickboard is included too. </description>
     	<color>0 255 0</color>
     	<!-- <color>0 0 70</color> -->
